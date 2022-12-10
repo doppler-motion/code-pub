@@ -1,6 +1,13 @@
 # Python高级编程知识
 
+----
+
+[TOC]
+
+------
+
 ## 第 1 章 装饰器
+
 * 自定义装饰器
 * @wraps装饰器
   > * 去掉装饰器外包装，返回本来的函数名
@@ -21,13 +28,14 @@
         > my_fun(msg="Jack")
         > print(my_fun)    #  ***<function welcome.<locals>.wrapper at 0x000001AAFFE0DAF0>***
         > ```
-        
+  
       * 加wraps
       
         ```python
         from functools import wraps
-        
-        
+  
+  
+  ​      
         def welcome(fn):
             @wraps(fn)
             def wrapper(*args, **kwargs):
@@ -36,20 +44,22 @@
                 return result
         
             return wrapper
-        
-        
+  
+  
+  ​      
         @welcome
         def my_fun(msg: str):
             print(f"hello {msg}")
-        
-        
+  
+  
+  ​      
         my_fun(msg="Jack")
         print(my_fun)  # ***<function my_fun at 0x000002C04C3DDAF0>***
         ```
-      
-        
-  
 
+  
+  ​      
+  
 * 带参数的装饰器
 
 ```python
@@ -173,3 +183,70 @@ class Student(MapMixin, DictMixin):
   class Person(metaclass=SingletonMeta):
     pass
 
+## 第15章 并发编程 -- 线程
+
+*   线程与进程
+
+>   *   进程是操作系统中运行的一个任务
+>       *   当前的操作系统基本都支持多进程并发
+>       *   进程拥有独立的CPU、内存等资源
+>   *   一个线程是一个进程中运行的一个任务
+>       *   一个进程可以同时并发多个任务
+>       *   线程之间共享进程的CPU、内存等资源
+
+*   创建线程
+*   给线程传递参数
+
+## 第16章 并发编程 -- 线程进阶
+
+*   通过继承创建线程
+
+```python
+class MyThread(Thread):
+    def __init__(self):
+        super(MyThread, self).__init__()
+        
+    def run(self):
+        pass
+```
+
+
+
+*   守护线程
+
+    *   守护线程会在主线程结束时候自动结束
+    *   主线程则需要等到所有非守护线程结束才能结束
+    *   守护线程一般用于非关键性的线程，比如日志
+
+    ```python
+    def task():
+        pass
+    
+    thread = Thread(target=task, daemon=True)
+    thread.start()
+    ```
+
+    
+
+*   线程安全队列
+
+```python
+# queue 模块中的Queue类提供了线程安全队列功能
+queue.put(item, block=True)
+queue.put(item, timeout=3)
+queue.get(block=False)
+queue.get(timeout=10)
+queue.qsize()
+queue.empty()
+queue.full()
+```
+
+
+
+*   生产者消费者线程实例
+
+## 第17章 并发编程 -- 线程锁
+
+*   线程锁
+
+    >   当多个线程在同一时刻访问同一数据时，可能产生数据丢失，覆盖，不完整等问题
