@@ -137,7 +137,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "/Users/ydchen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/ydchen/Documents/files/programming/C -B/Users/ydchen/Documents/files/programming/C/cmake-build-debug
+  command = "/Users/ydchen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/ydchen/Documents/gitfiles/code-pub/C -B/Users/ydchen/Documents/gitfiles/code-pub/C/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

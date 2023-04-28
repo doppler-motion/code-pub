@@ -16,10 +16,15 @@
 
 
 // 函数声明
-void exNum();
-void sortFunc();
-void pointer();
-void operator();
+void exNum();  // 数值交换
+
+void sortFunc();  // 排序函数
+
+void pointer();  // 指针学习
+
+void operator();  // 运算符
+
+void tmp();  // 临时测试函数
 
 // 变量声明
 int varList[] = {100, 200, 300};
@@ -31,6 +36,52 @@ int main() {
     printf("Hello, World!\n");
     printf("中文\n");
 
+    tmp();
+
+//    exNum();
+//    sortFunc();
+
+    return TRUE;
+}
+
+void tmp() {
+    int area;
+    area = WIDTH * LENGTH;
+    printf("the value of area: %d", area);
+    printf(NEWLINE);
+
+    printf("\n------------------\n");
+    printf("指针数组的理解\n");
+    char *a[] = {"China", "French", "America", "German"};
+    printf("数组元素的首地址\n");
+    printf("%p %p %p %p\n", a[0], a[1], a[2], a[3]);
+    printf("数组元素单元本身的地址\n");
+    printf("%p %p %p %p\n", &a[0], &a[1], &a[2], &a[3]);
+
+    printf("\n------------------\n");
+    printf("比较for循环中，++i，i++的区别\n");
+    int maxSize = 10;
+    for (int i=0; i < maxSize; ++i){
+        printf("%d ", i);
+    }
+    printf("\n");
+    for (int i=0; i < maxSize; i++){
+        printf("%d ", i);
+    }
+    printf("\n");
+
+}
+
+void fibTest() {
+    printf("\n------------------\n\n");
+    printf("斐波那契数列\n");
+
+    int ret;
+    ret = fib(FIB_NUM);
+    printf("%d阶斐波纳契数列和为：%d\n", FIB_NUM, ret);
+}
+
+void sum0To100() {
     printf("\n------------------\n\n");
     printf("1到100求和\n");
     int sum = 0, n = 100;
@@ -42,23 +93,6 @@ int main() {
     int sum1, m = 100;
     sum1 = (1 + m) * m / 2;
     printf("sum1: %d\n", sum1);
-
-    int area;
-    area = WIDTH * LENGTH;
-    printf("the value of area: %d", area);
-    printf(NEWLINE);
-
-    printf("\n------------------\n\n");
-    printf("斐波那契数列\n");
-
-    int ret;
-    ret = fib(FIB_NUM);
-    printf("%d阶斐波纳契数列和为：%d\n", FIB_NUM, ret);
-
-    exNum();
-    sortFunc();
-
-    return TRUE;
 }
 
 void exNum() {
