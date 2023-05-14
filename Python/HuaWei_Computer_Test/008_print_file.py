@@ -1,3 +1,4 @@
+# 打印文件
 n = int(input())
 file = {x: [] for x in range(6)}
 p = {x: [] for x in range(6)}

@@ -1,3 +1,4 @@
+# 优雅数组
 length, k = map(int, input().split())
 nums = list(map(int, input().split()))
 count = 0

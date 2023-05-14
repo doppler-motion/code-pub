@@ -1,3 +1,5 @@
+# 猜字谜
+
 import sys
 
 

@@ -1,3 +1,4 @@
+# 寻找充电设备组合
 import sys
 
 n = sys.stdin.readline().strip()

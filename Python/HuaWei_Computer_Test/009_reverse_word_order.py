@@ -1,3 +1,5 @@
+# 单词倒序
+
 import sys
 
 res_list = []

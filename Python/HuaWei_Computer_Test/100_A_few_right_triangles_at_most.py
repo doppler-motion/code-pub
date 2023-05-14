@@ -1,3 +1,4 @@
+# 最多几个直角三角形
 import sys
 
 N = int(input())

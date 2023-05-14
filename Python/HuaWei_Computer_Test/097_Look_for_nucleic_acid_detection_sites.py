@@ -1,3 +1,4 @@
+# 寻找核酸检测点
 class Point:
     def __init__(self, idx, dis, que):
         self.idx = idx

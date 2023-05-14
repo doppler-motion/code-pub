@@ -1,3 +1,5 @@
+# AI 处理器组合
+
 cpu = []
 string = input()
 for ch in string:

@@ -1,5 +1,5 @@
 # https://blog.csdn.net/2301_76848549/article/details/130163180  快递投放问题
-
+# 快递投放问题
 info = list(map(int, input().split(' ')))
 dict = {}
 dict1 = {}

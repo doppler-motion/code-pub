@@ -1,3 +1,4 @@
+# 查找单入口空闲区域
 import sys
 
 row_all, col_all = input().strip().split(" ")

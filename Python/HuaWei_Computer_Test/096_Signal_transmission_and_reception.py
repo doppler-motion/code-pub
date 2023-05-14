@@ -1,5 +1,5 @@
 # https://blog.csdn.net/qfc_128220/article/details/128714601
-
+# 信号发射和接收
 # 输入获取
 m, n = map(int, input().split())
 arr = list(map(int, input().split()))

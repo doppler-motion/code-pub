@@ -1,3 +1,4 @@
+# 最多等和不相交连续子数组
 def solve_method(seq, n):
     max_value = 0
     dp = seq[:]

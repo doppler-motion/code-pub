@@ -1,5 +1,5 @@
 #  https://blog.csdn.net/A_D_I_D_A_S/article/details/129323811
-
+# 统一限载货物数最小值
 def opt(goods, k):
     n = len(goods)
     sum = [0] * (n + 1)

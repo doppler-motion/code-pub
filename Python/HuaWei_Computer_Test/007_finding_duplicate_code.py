@@ -1,3 +1,4 @@
+# 查找重复代码
 text1, text2 = input().strip(), input().strip()
 if len(text1) > len(text2): text1, text2 = text2, text1
 
