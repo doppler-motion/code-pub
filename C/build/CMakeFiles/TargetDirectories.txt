@@ -1,0 +1,8 @@
+E:/files/programming/gitfiles/code-pub/C/build/CMakeFiles/edit_cache.dir
+E:/files/programming/gitfiles/code-pub/C/build/CMakeFiles/main.dir
+E:/files/programming/gitfiles/code-pub/C/build/CMakeFiles/rebuild_cache.dir
+E:/files/programming/gitfiles/code-pub/C/build/CMakeFiles/test.dir
+E:/files/programming/gitfiles/code-pub/C/build/CMakeFiles/LinkList.dir
+E:/files/programming/gitfiles/code-pub/C/build/CMakeFiles/LineList.dir
+E:/files/programming/gitfiles/code-pub/C/build/CMakeFiles/StaticList.dir
+E:/files/programming/gitfiles/code-pub/C/build/CMakeFiles/test1.dir

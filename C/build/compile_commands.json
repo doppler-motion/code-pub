@@ -1,0 +1,32 @@
+[
+{
+  "directory": "E:/files/programming/gitfiles/code-pub/C/build",
+  "command": "C:\\softwares\\C\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe   -g -std=gnu99 -o CMakeFiles\\main.dir\\main.c.obj -c E:\\files\\programming\\gitfiles\\code-pub\\C\\main.c",
+  "file": "E:/files/programming/gitfiles/code-pub/C/main.c"
+},
+{
+  "directory": "E:/files/programming/gitfiles/code-pub/C/build",
+  "command": "C:\\softwares\\C\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe   -g -std=gnu99 -o CMakeFiles\\test.dir\\tmp\\test.c.obj -c E:\\files\\programming\\gitfiles\\code-pub\\C\\tmp\\test.c",
+  "file": "E:/files/programming/gitfiles/code-pub/C/tmp/test.c"
+},
+{
+  "directory": "E:/files/programming/gitfiles/code-pub/C/build",
+  "command": "C:\\softwares\\C\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe   -g -std=gnu99 -o CMakeFiles\\LinkList.dir\\ch03\\LinkList.c.obj -c E:\\files\\programming\\gitfiles\\code-pub\\C\\ch03\\LinkList.c",
+  "file": "E:/files/programming/gitfiles/code-pub/C/ch03/LinkList.c"
+},
+{
+  "directory": "E:/files/programming/gitfiles/code-pub/C/build",
+  "command": "C:\\softwares\\C\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe   -g -std=gnu99 -o CMakeFiles\\LineList.dir\\ch03\\LineList.c.obj -c E:\\files\\programming\\gitfiles\\code-pub\\C\\ch03\\LineList.c",
+  "file": "E:/files/programming/gitfiles/code-pub/C/ch03/LineList.c"
+},
+{
+  "directory": "E:/files/programming/gitfiles/code-pub/C/build",
+  "command": "C:\\softwares\\C\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe   -g -std=gnu99 -o CMakeFiles\\StaticList.dir\\ch03\\StaticList.c.obj -c E:\\files\\programming\\gitfiles\\code-pub\\C\\ch03\\StaticList.c",
+  "file": "E:/files/programming/gitfiles/code-pub/C/ch03/StaticList.c"
+},
+{
+  "directory": "E:/files/programming/gitfiles/code-pub/C/build",
+  "command": "C:\\softwares\\C\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe   -g -std=gnu99 -o CMakeFiles\\test1.dir\\ch04\\test.c.obj -c E:\\files\\programming\\gitfiles\\code-pub\\C\\ch04\\test.c",
+  "file": "E:/files/programming/gitfiles/code-pub/C/ch04/test.c"
+}
+]
