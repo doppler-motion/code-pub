@@ -148,7 +148,8 @@ if scheduler.get_job("cron_func_test_2", "second"):
     # 存在的话，先删除
     scheduler.remove_job("cron_func_test_2", "second")
 # 每隔5s执行一次
-scheduler.add_job(async_func, trigger, args=["我是每分钟 20s  40s时各执行一次，存放在jobstore second, executor = second"],
+scheduler.add_job(async_func, trigger,
+                  args=["我是每分钟 20s  40s时各执行一次，存放在jobstore second, executor = second"],
                   id="cron_func_test_2",
                   jobstore="second",
                   executor="second")
