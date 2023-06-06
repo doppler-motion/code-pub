@@ -1,7 +1,7 @@
 #include "stdio.h"
-#include "tmp/utils_test.h"
-#include "tmp/sortFunc.h"
-#include "tmp/exchangeNum.h"
+#include "demoLearn//utils_test.h"
+#include "demoLearn/sortFunc.h"
+#include "demoLearn/exchangeNum.h"
 
 #define OK 1
 #define ERROR 0
