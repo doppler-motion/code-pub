@@ -31,7 +31,7 @@ void vectorUse() {
     }
 
     // 使用迭代器访问元素
-    vector<int>::iterator v = ve.begin();
+    auto v = ve.begin();
     while (v != ve.end()){
         cout << "value of v =" << *v << endl;
         v++;
