@@ -15,26 +15,26 @@
 #define FIB_NUM 10
 
 
-// å‡½æ•°å£°æ˜
-void exNum();  // æ•°å€¼äº¤æ¢
+// º¯ÊıÉùÃ÷
+void exNum();  // ÊıÖµ½»»»
 
-void sortFunc();  // æ’åºå‡½æ•°
+void sortFunc();  // ÅÅĞòº¯Êı
 
-void pointer();  // æŒ‡é’ˆå­¦ä¹ 
+void pointer();  // Ö¸ÕëÑ§Ï°
 
-void operator();  // è¿ç®—ç¬¦
+void operator();  // ÔËËã·û
 
-void tmp();  // ä¸´æ—¶æµ‹è¯•å‡½æ•°
+void tmp();  // ÁÙÊ±²âÊÔº¯Êı
 
-// å˜é‡å£°æ˜
+// ±äÁ¿ÉùÃ÷
 int varList[] = {100, 200, 300};
-int sortArray[] = {10, 102, 32, 87, 90, 23, 45, 101};  // æ’åºæ•°ç»„
+int sortArray[] = {10, 102, 32, 87, 90, 23, 45, 101};  // ÅÅĞòÊı×é
 int sortArrayLength = (int) sizeof(sortArray) / sizeof(int);
 
 
 int main() {
     printf("Hello, World!\n");
-    printf("ä¸­æ–‡\n");
+    printf("ÖĞÎÄ\n");
 
     tmp();
 
@@ -51,15 +51,15 @@ void tmp() {
     printf(NEWLINE);
 
     printf("\n------------------\n");
-    printf("æŒ‡é’ˆæ•°ç»„çš„ç†è§£\n");
+    printf("Ö¸ÕëÊı×éµÄÀí½â\n");
     char *a[] = {"China", "French", "America", "German"};
-    printf("æ•°ç»„å…ƒç´ çš„é¦–åœ°å€\n");
+    printf("Êı×éÔªËØµÄÊ×µØÖ·\n");
     printf("%p %p %p %p\n", a[0], a[1], a[2], a[3]);
-    printf("æ•°ç»„å…ƒç´ å•å…ƒæœ¬èº«çš„åœ°å€\n");
+    printf("Êı×éÔªËØµ¥Ôª±¾ÉíµÄµØÖ·\n");
     printf("%p %p %p %p\n", &a[0], &a[1], &a[2], &a[3]);
 
     printf("\n------------------\n");
-    printf("æ¯”è¾ƒforå¾ªç¯ä¸­ï¼Œ++iï¼Œi++çš„åŒºåˆ«\n");
+    printf("±È½ÏforÑ­»·ÖĞ£¬++i£¬i++µÄÇø±ğ\n");
     int maxSize = 10;
     for (int i=0; i < maxSize; ++i){
         printf("%d ", i);
@@ -74,16 +74,16 @@ void tmp() {
 
 void fibTest() {
     printf("\n------------------\n\n");
-    printf("æ–æ³¢é‚£å¥‘æ•°åˆ—\n");
+    printf("ì³²¨ÄÇÆõÊıÁĞ\n");
 
     int ret;
     ret = fib(FIB_NUM);
-    printf("%dé˜¶æ–æ³¢çº³å¥‘æ•°åˆ—å’Œä¸ºï¼š%d\n", FIB_NUM, ret);
+    printf("%d½×ì³²¨ÄÉÆõÊıÁĞºÍÎª£º%d\n", FIB_NUM, ret);
 }
 
 void sum0To100() {
     printf("\n------------------\n\n");
-    printf("1åˆ°100æ±‚å’Œ\n");
+    printf("1µ½100ÇóºÍ\n");
     int sum = 0, n = 100;
     for (int i = 1; i <= n; i++) {
         sum += i;
@@ -96,18 +96,18 @@ void sum0To100() {
 }
 
 void exNum() {
-    //æ•°å€¼äº¤æ¢
+    //ÊıÖµ½»»»
     printf("\n------------------\n\n");
-    printf("æ•°å€¼äº¤æ¢\n");
+    printf("ÊıÖµ½»»»\n");
     int a4 = 3, b4 = 5;
 
-    printf("æ™®é€šäº¤æ¢\n");
+    printf("ÆÕÍ¨½»»»\n");
     exchangeNum(a4, b4);
 
-    printf("åˆ©ç”¨æŒ‡é’ˆäº¤æ¢\n");
+    printf("ÀûÓÃÖ¸Õë½»»»\n");
     exchangeNumByPointer(&a4, &b4);
 
-    printf("åˆ©ç”¨å¼‚æˆ–äº¤æ¢æ•°å€¼\n");
+    printf("ÀûÓÃÒì»ò½»»»ÊıÖµ\n");
     exchangeNumByXOR(a4, b4);
 
     printf("a4: %d, b4: %d\n", a4, b4);
@@ -115,56 +115,56 @@ void exNum() {
 
 void sortFunc() {
     printf("\n------------------\n\n");
-    printf("å†’æ³¡æ’åº\n");
+    printf("Ã°ÅİÅÅĞò\n");
 
-    printf("sortArray å†’æ³¡æ’åºå‰ï¼š\n");
+    printf("sortArray Ã°ÅİÅÅĞòÇ°£º\n");
     display(sortArray, sortArrayLength);
 
     bubbleSort(sortArray, sortArrayLength);
-    printf("sortArray å†’æ³¡æ’åºåï¼š\n");
+    printf("sortArray Ã°ÅİÅÅĞòºó£º\n");
     display(sortArray, sortArrayLength);
 
-    printf("æ‰“ä¹±æ•°ç»„\n");
+    printf("´òÂÒÊı×é\n");
     disorganise(sortArray, sortArrayLength);
 
     printf("\n------------------\n\n");
-    printf("å¿«é€Ÿæ’åº\n");
+    printf("¿ìËÙÅÅĞò\n");
 
-    printf("sortArray å¿«é€Ÿæ’åºå‰ï¼š\n");
+    printf("sortArray ¿ìËÙÅÅĞòÇ°£º\n");
     display(sortArray, sortArrayLength);
 
-    // å¿«é€Ÿæ’åº
+    // ¿ìËÙÅÅĞò
     quickSort(sortArray, 0, sortArrayLength - 1);
-    printf("myArray2 å¿«é€Ÿæ’åºåï¼š\n");
+    printf("myArray2 ¿ìËÙÅÅĞòºó£º\n");
     display(sortArray, sortArrayLength);
 }
 
 void operator() {
     printf("\n------------------\n\n");
-    printf("è‡ªå¢è‡ªå‡è¿ç®—ç¬¦\n");
+    printf("×ÔÔö×Ô¼õÔËËã·û\n");
 
     int A = 20, C;
     C = A++;
-    printf("å…ˆèµ‹å€¼åè¿ç®—ï¼š\n");
-    printf("Line 1 - C çš„å€¼æ˜¯ %d\n", C);
-    printf("Line 2 - A çš„å€¼æ˜¯ %d\n", A);
+    printf("ÏÈ¸³ÖµºóÔËËã£º\n");
+    printf("Line 1 - C µÄÖµÊÇ %d\n", C);
+    printf("Line 2 - A µÄÖµÊÇ %d\n", A);
     A = 20;
     C = A--;
-    printf("Line 3 - C çš„å€¼æ˜¯ %d\n", C);
-    printf("Line 4 - A çš„å€¼æ˜¯ %d\n", A);
+    printf("Line 3 - C µÄÖµÊÇ %d\n", C);
+    printf("Line 4 - A µÄÖµÊÇ %d\n", A);
 
-    printf("å…ˆè¿ç®—åèµ‹å€¼ï¼š\n");
+    printf("ÏÈÔËËãºó¸³Öµ£º\n");
     A = 20;
     C = ++A;
-    printf("Line 5 - C çš„å€¼æ˜¯ %d\n", C);
-    printf("Line 6 - A çš„å€¼æ˜¯ %d\n", A);
+    printf("Line 5 - C µÄÖµÊÇ %d\n", C);
+    printf("Line 6 - A µÄÖµÊÇ %d\n", A);
     A = 20;
     C = --A;
-    printf("Line 7 - C çš„å€¼æ˜¯ %d\n", C);
-    printf("Line 8 - A çš„å€¼æ˜¯ %d\n", A);
+    printf("Line 7 - C µÄÖµÊÇ %d\n", C);
+    printf("Line 8 - A µÄÖµÊÇ %d\n", A);
 
     printf("\n------------------\n\n");
-    printf("æ•°ç»„å–å€¼æ£€éªŒ\n");
+    printf("Êı×éÈ¡Öµ¼ìÑé\n");
     int idx = 4;
     int array3[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     printf("array3[idx]: %d\n", array3[idx]);
@@ -175,61 +175,61 @@ void operator() {
 
 void pointer() {
     printf("\n------------------\n\n");
-    printf("è·å–æŒ‡é’ˆå˜é‡\n");
+    printf("»ñÈ¡Ö¸Õë±äÁ¿\n");
 
-    int var = 20; // å®é™…å£°æ˜çš„å˜é‡
-    int *ip; // æŒ‡é’ˆå˜é‡
+    int var = 20; // Êµ¼ÊÉùÃ÷µÄ±äÁ¿
+    int *ip; // Ö¸Õë±äÁ¿
     ip = &var;
 
-    printf("var å˜é‡çš„åœ°å€ï¼š%p\n", &var);
-    printf("ip å˜é‡çš„åœ°å€ï¼š%p\n", ip);
-    printf("*ip å­˜å‚¨çš„å€¼ï¼š%d\n", *ip);
+    printf("var ±äÁ¿µÄµØÖ·£º%p\n", &var);
+    printf("ip ±äÁ¿µÄµØÖ·£º%p\n", ip);
+    printf("*ip ´æ´¢µÄÖµ£º%d\n", *ip);
 
     printf("\n------------------\n\n");
-    printf("æŒ‡é’ˆé€’å¢");
+    printf("Ö¸ÕëµİÔö");
     const int MAX = 3;
     int j, *ptr;
 
-    // æŒ‡é’ˆä¸­çš„æ•°ç»„åœ°å€
+    // Ö¸ÕëÖĞµÄÊı×éµØÖ·
     ptr = varList;
-    // é€’å¢æŒ‡é’ˆçš„å€¼
+    // µİÔöÖ¸ÕëµÄÖµ
     for (j = 0; j < MAX; j++) {
-        printf("å­˜å‚¨åœ°å€ï¼švarList[%d] = %p\n", j, ptr);
-        printf("å­˜å‚¨å€¼ï¼švarList[%d] = %d\n", j, *ptr);
+        printf("´æ´¢µØÖ·£ºvarList[%d] = %p\n", j, ptr);
+        printf("´æ´¢Öµ£ºvarList[%d] = %d\n", j, *ptr);
         ptr++;
     }
 
     printf("\n------------------\n\n");
-    printf("æŒ‡é’ˆé€’å‡");
+    printf("Ö¸Õëµİ¼õ");
 
     int k, *ptr_del;
-    // é€’å‡æŒ‡é’ˆçš„å€¼
-    // æŒ‡å‘å…ƒç»„æœ€åä¸€ä¸ªå…ƒç´ 
+    // µİ¼õÖ¸ÕëµÄÖµ
+    // Ö¸ÏòÔª×é×îºóÒ»¸öÔªËØ
     ptr_del = &varList[MAX - 1];
     for (k = MAX; k > 0; k--) {
-        printf("å­˜å‚¨åœ°å€ï¼švarList[%d] = %p\n", k, ptr_del);
-        printf("å­˜å‚¨å€¼ï¼švarList[%d] = %d\n", k, *ptr_del);
+        printf("´æ´¢µØÖ·£ºvarList[%d] = %p\n", k, ptr_del);
+        printf("´æ´¢Öµ£ºvarList[%d] = %d\n", k, *ptr_del);
 
         ptr_del--;
     }
 
     printf("\n------------------\n\n");
-    printf("æŒ‡é’ˆæ¯”è¾ƒ");
+    printf("Ö¸Õë±È½Ï");
 
     int l = 0, *ptr_compare;
 
-    // æ¯”è¾ƒæŒ‡é’ˆçš„å€¼
+    // ±È½ÏÖ¸ÕëµÄÖµ
     ptr_compare = varList;
     while (ptr_compare <= &varList[MAX - 2]) {
-        printf("å­˜å‚¨åœ°å€ï¼švarList[%d] = %p\n", l, ptr_compare);
-        printf("å­˜å‚¨å€¼ï¼švarList[%d] = %d\n", l, *ptr_compare);
-        // æŒ‡å‘ä¸Šä¸€ä¸ªå…ƒç´ å€¼
+        printf("´æ´¢µØÖ·£ºvarList[%d] = %p\n", l, ptr_compare);
+        printf("´æ´¢Öµ£ºvarList[%d] = %d\n", l, *ptr_compare);
+        // Ö¸ÏòÉÏÒ»¸öÔªËØÖµ
         ptr_compare++;
         l++;
     }
 
     printf("\n------------------\n\n");
-    printf("æŒ‡é’ˆæ•°ç»„\n");
+    printf("Ö¸ÕëÊı×é\n");
 
     int *ptr_arr[MAX];
     int i_arr;
@@ -238,11 +238,11 @@ void pointer() {
         ptr_arr[i_arr] = &varList[i_arr];
     }
     for (i_arr = 0; i_arr < MAX; i_arr++) {
-        printf("æŒ‡é’ˆæ•°æ®ä½ç½® %d å­˜å‚¨åœ°å€ %p å­˜å‚¨å€¼ä¸º %d\n", i_arr, ptr_arr[i_arr], *ptr_arr[i_arr]);
+        printf("Ö¸ÕëÊı¾İÎ»ÖÃ %d ´æ´¢µØÖ· %p ´æ´¢ÖµÎª %d\n", i_arr, ptr_arr[i_arr], *ptr_arr[i_arr]);
     }
 
     printf("\n------------------\n\n");
-    printf("æŒ‡å‘æŒ‡é’ˆçš„æŒ‡é’ˆ\n");
+    printf("Ö¸ÏòÖ¸ÕëµÄÖ¸Õë\n");
 
     int var_pointer_pointer;
     int *ptr_pointer_pointer;
@@ -252,52 +252,52 @@ void pointer() {
     ptr_pointer_pointer = &var_pointer_pointer;
     ptr_double_pointer = &ptr_pointer_pointer;
 
-    printf("é€šè¿‡**ptrè·å–å€¼\n");
+    printf("Í¨¹ı**ptr»ñÈ¡Öµ\n");
     printf("var_pointer_pointer value : %d, address: %p\n", var_pointer_pointer, &var_pointer_pointer);
-    printf("é€šè¿‡*ptr_pointer_pointer è·å–å€¼ï¼š%d, åœ°å€æ˜¯ï¼š%p\n", *ptr_pointer_pointer, ptr_pointer_pointer);
-    printf("é€šè¿‡**ptr_double_pointer è·å–å€¼ï¼š%d, åœ°å€æ˜¯ï¼š%p\n", **ptr_double_pointer, *ptr_double_pointer);
+    printf("Í¨¹ı*ptr_pointer_pointer »ñÈ¡Öµ£º%d, µØÖ·ÊÇ£º%p\n", *ptr_pointer_pointer, ptr_pointer_pointer);
+    printf("Í¨¹ı**ptr_double_pointer »ñÈ¡Öµ£º%d, µØÖ·ÊÇ£º%p\n", **ptr_double_pointer, *ptr_double_pointer);
 
     printf("\n------------------\n\n");
-    printf("æŒ‡é’ˆä¼ é€’ç»™å‡½æ•°\n");
+    printf("Ö¸Õë´«µİ¸øº¯Êı\n");
 
-    // å®šä¹‰å«æœ‰6ä¸ªå…ƒç´ çš„æ•°ç»„
+    // ¶¨Òåº¬ÓĞ6¸öÔªËØµÄÊı×é
     int arr_list1[] = {1, 29, 10, 100, 34, 78};
     int size = 6;
     double avg;
 
-    // ä¼ é€’ä¸€ä¸ªæ•°ç»„çš„æŒ‡é’ˆä½œä¸ºå‚æ•°
+    // ´«µİÒ»¸öÊı×éµÄÖ¸Õë×÷Îª²ÎÊı
     avg = getAvg(arr_list1, size);
-    printf("è¾“å‡ºè¿”å›çš„å¹³å‡å€¼ï¼š%f\n", avg);
+    printf("Êä³ö·µ»ØµÄÆ½¾ùÖµ£º%f\n", avg);
 
-    printf("è·å–å½“å‰æ—¶é—´\n");
+    printf("»ñÈ¡µ±Ç°Ê±¼ä\n");
     unsigned long nowSec;
     getTime(&nowSec);
-    printf("å½“å‰æ—¶é—´ï¼š%ld\n", nowSec);
+    printf("µ±Ç°Ê±¼ä£º%ld\n", nowSec);
 
     printf("\n------------------\n\n");
-    printf("å‡½æ•°è¿”å›æŒ‡é’ˆ\n");
+    printf("º¯Êı·µ»ØÖ¸Õë\n");
     printf("****************************\n");
-    printf("Cè¯­è¨€ä¸æ”¯æŒè¿”å›å±€éƒ¨å˜é‡çš„æŒ‡é’ˆï¼Œé™¤éå£°æ˜é™æ€å˜é‡\n");
+    printf("CÓïÑÔ²»Ö§³Ö·µ»Ø¾Ö²¿±äÁ¿µÄÖ¸Õë£¬³ı·ÇÉùÃ÷¾²Ì¬±äÁ¿\n");
     printf("****************************\n");
 
-    // ä¸€ä¸ªæŒ‡å‘æ•´æ•°çš„æŒ‡é’ˆ
+    // Ò»¸öÖ¸ÏòÕûÊıµÄÖ¸Õë
     int *p;
     int iP;
     p = getRandom();
 
     for (iP = 0; iP < 10; iP++) {
-        printf("*(p + [%d])çš„å€¼æ˜¯ï¼š%d\n", iP, *(p + iP));
+        printf("*(p + [%d])µÄÖµÊÇ£º%d\n", iP, *(p + iP));
     }
 
     printf("\n------------------\n\n");
-    printf("å‡½æ•°æŒ‡é’ˆï¼šæŒ‡å‘å‡½æ•°çš„æŒ‡é’ˆå˜é‡\n");
-    int (*pFunc)(int, int) = &getMax; // &å¯ä»¥å»æ‰
+    printf("º¯ÊıÖ¸Õë£ºÖ¸Ïòº¯ÊıµÄÖ¸Õë±äÁ¿\n");
+    int (*pFunc)(int, int) = &getMax; // &¿ÉÒÔÈ¥µô
     int a1 = 29, a2 = 30, a3 = 100, a_max;
 
     a_max = pFunc(pFunc(a1, a2), a3);
     printf("the max value of a1, a2, a3: %d\n", a_max);
 
-    printf("å›è°ƒå‡½æ•°ï¼šå‡½æ•°æŒ‡é’ˆä½œä¸ºæŸä¸ªå‡½æ•°çš„å‚æ•°\n");
+    printf("»Øµ÷º¯Êı£ºº¯ÊıÖ¸Õë×÷ÎªÄ³¸öº¯ÊıµÄ²ÎÊı\n");
 
     int myArray[10];
     populate_array(myArray, 10, getNextRandomValue);
