@@ -1,5 +1,6 @@
 from flask import Blueprint
 
+# 定义蓝图
 tag = Blueprint("tag", __name__)
 
 
