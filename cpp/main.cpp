@@ -9,9 +9,9 @@ int main() {
 
     vectorUse();
 
-    classFunc2();
+//    classFunc2();
 
-
+    cout << "int size: " << sizeof (int) << endl;
     cout << "Hello world!" << endl;
 
     return 0;
