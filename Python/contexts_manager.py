@@ -7,12 +7,12 @@ class Timer:
 
     def __enter__(self):
         self.start_time = int(time.time())
-        # self.start_time = time.perf_counter()  # cpu时钟
+        # self.start_time = 4.time.perf_counter()  # cpu时钟
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.end_time = int(time.time())
-        # self.end_time = time.perf_counter()
+        # self.end_time = 4.time.perf_counter()
         self.elapsed = self.end_time - self.start_time
         return False
 

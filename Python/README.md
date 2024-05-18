@@ -4,31 +4,23 @@
 
 
 
-## [数据结构与算法](./DataStructure&Algorithm/README.md)
+## [1. 数据结构与算法](01.DataStructure&Algorithm/README.md)
 
 主要记录了对常用数据结构、算法的学习以及运用。
 
 
 
-
-
-## [Python高级用法](./python_advance/README.md)
-
+## [2. Python包的使用](02.python_modules/README.md)
 
 
 
-
-## [Python面向对象编程](./python_oop/README.md)
-
+## [3. Python面向对象编程](03.python_oop/README.md)
 
 
 
-
-## [Python包的使用](./python_modules/README.md)
-
+## [4. Python高级用法](04.python_advance/README.md)
 
 
 
-
-## [Python Web开发](./python_web_develop/README.md)
+## [5. Python Web开发](05.python_web_develop/README.md)
 
